@@ -101,6 +101,12 @@ header nav ul {
   object-position: bottom;
 }
 
+main h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: var(--text-color);
+}
+
 .widgets {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;

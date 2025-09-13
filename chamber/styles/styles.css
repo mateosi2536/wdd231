@@ -9,7 +9,6 @@
 
 * {
   font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
   font-variation-settings: "wdth" 100;
@@ -111,19 +110,20 @@ header nav ul {
 @media (max-width: 1040px) {
   .widgets {
     grid-template-columns: 1fr 1fr;
-    .WD-events {
-      grid-column: span 2;
-    }
+  }
+  .widgets .WD-events {
+    grid-column: span 2;
   }
 }
+
 @media (max-width: 740px) {
   .widgets {
     grid-template-columns: 1fr;
-    .WD-events,
-    .WD-weather,
-    .WD-weather-forecast {
-      grid-column: span 1;
-    }
+  }
+  .widgets .WD-events,
+  .widgets .WD-weather,
+  .widgets .WD-weather-forecast {
+    grid-column: span 1;
   }
 }
 
@@ -183,28 +183,28 @@ header nav ul {
 }
 
 .member-card {
-    border: 1px solid var(--primary-color);
-    padding: 10px;
-    border-radius: 10px;
+  border: 1px solid var(--primary-color);
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .member-card div {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
 }
 
 .member-card img {
-    margin-left: auto;
-    width: 80px;
-    height: 80px;
-    border-radius: 30px;
+  margin-left: auto;
+  width: 80px;
+  height: 80px;
+  border-radius: 30px;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
 }
 
 .list {

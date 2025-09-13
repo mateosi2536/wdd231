@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Alpha Company",
+        "address": "123 Main St, City",
+        "phone": "+1 555 111 2222",
+        "website": "https://www.alpha-company.com",
+        "image": "alpha.png",
+        "membershipLevel": 3,
+        "description": "Specialized software technology services."
+    },
+    {
+        "name": "Beta Solutions",
+        "address": "45 Second Ave, City",
+        "phone": "+1 555 333 4444",
+        "website": "https://www.beta-solutions.com",
+        "image": "beta.png",
+        "membershipLevel": 2,
+        "description": "Business consultancy and enterprise solutions."
+    },
+    {
+        "name": "Gamma Corp",
+        "address": "78 Industrial Rd, City",
+        "phone": "+1 555 555 6666",
+        "website": "https://www.gamma-corp.com",
+        "image": "gamma.png",
+        "membershipLevel": 1,
+        "description": "Electronic component manufacturing."
+    },
+    {
+        "name": "Delta Marketing",
+        "address": "10 Commerce St, City",
+        "phone": "+1 555 777 8888",
+        "website": "https://www.delta-marketing.com",
+        "image": "delta.png",
+        "membershipLevel": 2,
+        "description": "Digital marketing and advertising agency."
+    },
+    {
+        "name": "Epsilon Tech",
+        "address": "22 Innovation Ave, City",
+        "phone": "+1 555 999 0000",
+        "website": "https://www.epsilon-tech.com",
+        "image": "epsilon.png",
+        "membershipLevel": 3,
+        "description": "Web and mobile application development."
+    },
+    {
+        "name": "Zeta Finance",
+        "address": "50 Banking St, City",
+        "phone": "+1 555 111 2222",
+        "website": "https://www.zeta-finance.com",
+        "image": "zeta.png",
+        "membershipLevel": 1,
+        "description": "Financial services and banking consultancy."
+    },
+    {
+        "name": "Eta Logistics",
+        "address": "99 Transport Blvd, City",
+        "phone": "+1 555 333 4444",
+        "website": "https://www.eta-logistics.com",
+        "image": "eta.png",
+        "membershipLevel": 2,
+        "description": "Logistics solutions and cargo transport."
+    }
+]

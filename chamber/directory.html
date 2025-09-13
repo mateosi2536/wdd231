@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manta Chamber of Commerce</title>
+    <meta name="description" content="Main page of the Manta Chamber of Commerce, Ecuador">
+    <meta name="author" content="Mateo Zambrano Delgado">
+    <link rel="icon" href="images/main.ico" type="image/x-icon">
+
+    <meta property="og:title" content="Manta Chamber of Commerce">
+    <meta property="og:description" content="Main page of the Manta Chamber of Commerce, Ecuador">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1593642634367-d91a135587b5">
+    <meta property="og:url" content="https://example.com/">
+    <meta property="og:type" content="website">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <script src="scripts/last-modified.js" defer></script>
+    <script src="scripts/burguerBT.js" defer></script>
+    <script src="scripts/membersContainer.js" defer></script>
+    <script src="scripts/toggle.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <a>
+            <img src="images/main.png" alt="main icon">
+        </a>
+        <h1>Manta Chamber of Commerce</h1>
+        <nav>
+            <ul id='mainList'>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger" aria-label="Menú" id="hamburgerBtn">
+            <svg width="24" height="24" viewBox="0 0 24 24">
+                <rect y="4" width="24" height="3" />
+                <rect y="10" width="24" height="3" />
+                <rect y="16" width="24" height="3" />
+            </svg>
+        </button>
+    </header>
+    <main>
+        <nav class="hero">
+            <img src="images/puerto.jpg" alt="puerto Manta">
+        </nav>
+        <nav class="widgets">
+            <div class="WD-events">
+                <h2>Upcoming Events</h2>
+                <ul>
+                    <li>Event 1 - Date</li>
+                    <li>Event 2 - Date</li>
+                    <li>Event 3 - Date</li>
+                    <li>Event 4 - Date</li>
+                    <li>Event 5 - Date</li>
+                    <li>Event 6 - Date</li>
+                </ul>
+            </div>
+            <div class="WD-weather">
+                <h2>Current Weather</h2>
+                <img src="images/weather.png" alt="weather image icon">
+                <div>
+                    <p>Temperature: 25°C</p>
+                    <p>Condition: Sunny</p>
+                    <p>Condition: Sunny</p>
+                    <p>Condition: Sunny</p>
+                </div>
+            </div>
+            <div class="WD-weather-forecast">
+                <h2>Weather Forecast</h2>
+                <ul>
+                    <li>Day 1 - 26°C / Sunny</li>
+                    <li>Day 2 - 24°C / Cloudy</li>
+                    <li>Day 3 - 23°C / Rain</li>
+                    <li>Day 4 - 25°C / Sunny</li>
+                    <li>Day 5 - 27°C / Sunny</li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="members-section">
+            <div class="members-header">
+                <h2>Our Members</h2>
+                <button id="toggleView">Cambiar a Lista</button>
+            </div>
+            <div class="members-container grid" id="membersContainer">
+                <!-- Member cards will be dynamically inserted here -->
+            </div>
+        </nav>
+    </main>
+    <footer>
+        <nav>
+            <a href="https://github.com/mateosi2536">
+                <img src="images/github-svgrepo-com.svg" alt="github logo" />
+            </a>
+            <a href="https://www.linkedin.com/in/mateo-zambrano">
+                <img src="images/linkedin-svgrepo-com.svg" alt="linkedin logo" />
+            </a>
+            <a href="https://www.facebook.com">
+                <img src="images/facebook-svgrepo-com.svg" alt="facebook logo" />
+            </a>
+        </nav>
+        <p>&copy; <span id="currentYear"></span> Mateo Zambrano Delgado - WDD 231</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>

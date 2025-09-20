@@ -159,6 +159,14 @@ main h1 {
   padding: 10px;
 }
 
+.forecast {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .members-section {
   background-color: var(--secondary-color);
   padding: 10px;

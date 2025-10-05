@@ -1,0 +1,32 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 2em;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #1e90ff;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+ul {
+  margin-left: 2em;
+}
+
+.wireframe {
+  width: 100%;
+  max-width: 400px;
+  border: 2px dashed #1e90ff;
+}

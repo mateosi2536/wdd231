@@ -12,7 +12,7 @@
     <meta property="og:title" content="Manta Chamber of Commerce">
     <meta property="og:description" content="Main page of the Manta Chamber of Commerce, Ecuador">
     <meta property="og:image" content="https://images.unsplash.com/photo-1593642634367-d91a135587b5">
-    <meta property="og:url" content="https://mateosi2536.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://mateosi2536.github.io/wdd231/chamber/index.html">
     <meta property="og:type" content="website">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,8 +26,8 @@
 
     <script src="scripts/last-modified.js" defer></script>
     <script src="scripts/burguer-bt.js" defer></script>
-    <script src="scripts/members-container.js" defer></script>
-    <script src="scripts/toggle.js" defer></script>
+    <script src="scripts/card-items.js" defer></script>
+    <script src="scripts/last-visit.js" defer></script>
 </head>
 
 <body>
@@ -52,54 +52,13 @@
             </svg>
         </button>
     </header>
+
     <main>
-        <h1>Manta Chamber of Commerce</h1>
-        <nav class="hero">
-            <img src="images/puerto.jpg" alt="port Manta">
-        </nav>
-        <nav class="widgets">
-            <div class="WD-events">
-                <h2>Upcoming Events</h2>
-                <ul>
-                    <li>Event 1 - Date</li>
-                    <li>Event 2 - Date</li>
-                    <li>Event 3 - Date</li>
-                    <li>Event 4 - Date</li>
-                    <li>Event 5 - Date</li>
-                    <li>Event 6 - Date</li>
-                </ul>
-            </div>
-            <div class="WD-weather">
-                <h2>Current Weather</h2>
-                <img src="images/weather.png" alt="weather of rain clouds">
-                <div>
-                    <p>Temperature: 25°C</p>
-                    <p>Condition: Sunny</p>
-                    <p>Condition: Sunny</p>
-                    <p>Condition: Sunny</p>
-                </div>
-            </div>
-            <div class="WD-weather-forecast">
-                <h2>Weather Forecast</h2>
-                <ul>
-                    <li>Day 1 - 26°C / Sunny</li>
-                    <li>Day 2 - 24°C / Cloudy</li>
-                    <li>Day 3 - 23°C / Rain</li>
-                    <li>Day 4 - 25°C / Sunny</li>
-                    <li>Day 5 - 27°C / Sunny</li>
-                </ul>
-            </div>
-        </nav>
-        <nav class="members-section">
-            <div class="members-header">
-                <h2>Our Members</h2>
-                <button id="toggleView">Cambiar a Lista</button>
-            </div>
-            <div class="members-container grid" id="membersContainer">
-                <!-- Member cards will be dynamically inserted here -->
-            </div>
-        </nav>
+        <h1>Gallery of Places of Interest</h1>
+        <h2 id="visit-message" class="visit-message"></h2>
+        <div id="cards-container"></div>
     </main>
+    
     <footer>
         <nav>
             <a href="https://github.com/mateosi2536">

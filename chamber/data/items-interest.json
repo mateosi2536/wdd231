@@ -1,0 +1,50 @@
+[
+    {
+        "name": "El Murciélago Beach",
+        "address": "Av. 24 de Mayo, Manta",
+        "description": "The most visited beach in the city, ideal for swimmers and water sports enthusiasts like kite-surfing. Its unique shape resembles a bat.",
+        "image": "./images/items-interest/el-murcielago.jpg"
+    },
+    {
+        "name": "Santa Marianita Beach",
+        "address": "About 15 km south of Manta",
+        "description": "Known for its calm atmosphere and natural beauty, popular for water sports and a peaceful getaway.",
+        "image": "./images/items-interest/santa-marianita.jpg"
+    },
+    {
+        "name": "San Lorenzo Beach",
+        "address": "North of Manta",
+        "description": "A less crowded beach, perfect for a rustic and authentic environment. Great for local cuisine and a quiet seaside experience.",
+        "image": "./images/items-interest/san-lorenzo.jpg"
+    },
+    {
+        "name": "Mall del Pacífico",
+        "address": "Av. 24 de Mayo and Calle 104, Manta",
+        "description": "The largest shopping mall in the city, featuring 136 stores, a 5-star hotel, and panoramic views of El Murciélago Beach.",
+        "image": "./images/items-interest/mall-del-pacifico.jpg"
+    },
+    {
+        "name": "Manta Port",
+        "address": "Av. 24 de Mayo, Manta",
+        "description": "One of Ecuador’s most important fishing ports, known for its strong influence on the local economy and vibrant fishing industry.",
+        "image": "./images/items-interest/manta-port.jpg"
+    },
+    {
+        "name": "Central Bank Museum",
+        "address": "Calle 13 and Av. 106, Manta",
+        "description": "A cultural space hosting exhibitions about the history and culture of the region, providing deep insight into Manabí’s identity.",
+        "image": "./images/items-interest/central-bank-museum.jpg"
+    },
+    {
+        "name": "Manta Central Park",
+        "address": "Calle 13 and Av. 106, Manta",
+        "description": "The heart of the city, surrounded by restaurants, shops, and lively urban life. Perfect starting point to explore Manta.",
+        "image": "./images/items-interest/manta-central-park.jpg"
+    },
+    {
+        "name": "Commerce Festival",
+        "address": "",
+        "description": "An annual event celebrating Manta’s commercial identity, featuring cultural, gastronomic, and musical activities. A great opportunity to experience the warmth of locals.",
+        "image": "./images/items-interest/commerce-festival.jpg"
+    }
+]

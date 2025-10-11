@@ -1,32 +1,160 @@
-body {
-  font-family: "Open Sans", sans-serif;
-  margin: 0;
-  padding: 2em;
-  background-color: #f0f2f5;
-  color: #333;
+:root {
+  --color-primary: #003366;
+  --color-accent: #00bfff;
+  --color-bg: #f9fafb;
+  --color-text: #222;
+  --font-primary: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h1,
-h2 {
-  font-family: "Montserrat", sans-serif;
-  color: #1e90ff;
-}
-
-header {
+main {
+  margin: 10px;
   text-align: center;
-  margin-bottom: 2em;
 }
+
+/*-----------------hero------------------*/
+
+.hero {
+  position: relative;
+  background-image: url("../images/fond.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 0 1rem;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+main h1,
+main p {
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+}
+
+/*-----------------------plans-------------------------*/
 
 section {
-  margin-bottom: 2em;
+  margin-bottom: 20px;
+  margin-top: 60px;
 }
 
-ul {
-  margin-left: 2em;
+section h2 {
+  margin: 0px;
 }
 
-.wireframe {
-  width: 100%;
-  max-width: 400px;
-  border: 2px dashed #1e90ff;
+.plans-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.plans-tabs button {
+  background-color: var(--color-primary);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.plans-tabs button:hover {
+  background-color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+.plans-tabs button.active {
+  background-color: var(--color-accent);
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#plans,
+#corp-plans,
+#extras {
+  display: none;
+}
+
+#plans.active,
+#corp-plans.active,
+#extras.active {
+  display: block;
+}
+
+.plans-container {
+  display: grid;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 0 2rem;
+}
+
+.plan-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.plan-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.plan-card h2 {
+  font-size: 1.5rem;
+  color: #003366;
+  margin-bottom: 0.5rem;
+}
+
+.plan-card p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.plan-card ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+
+.plan-card ul li {
+  margin: 0.3rem 0;
+  color: #222;
 }

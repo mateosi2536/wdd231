@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "name": "Basic",
+    "speed": "50 Mbps",
+    "price": 25.99,
+    "description": "Ideal for light browsing, email, and social media.",
+    "features": [
+      "Stable connection",
+      "Free installation",
+      "24/7 support"
+    ],
+    "image": "./images/plans/plan-basic.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Standard",
+    "speed": "100 Mbps",
+    "price": 39.99,
+    "description": "Perfect for streaming and video calls without interruptions.",
+    "features": [
+      "HD streaming without buffering",
+      "WiFi included",
+      "24/7 support"
+    ],
+    "image": "./images/plans/plan-standard.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Advanced",
+    "speed": "200 Mbps",
+    "price": 59.99,
+    "description": "Fast connection for homes with multiple devices.",
+    "features": [
+      "Lag-free gaming",
+      "4K streaming",
+      "Premium technical support"
+    ],
+    "image": "./images/plans/plan-advanced.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Premium",
+    "speed": "500 Mbps",
+    "price": 79.99,
+    "description": "High speed for streaming, gaming, and intensive remote work.",
+    "features": [
+      "Ultra-fast connection",
+      "Advanced router included",
+      "Priority technical support"
+    ],
+    "image": "./images/plans/plan-premium.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Ultra",
+    "speed": "1 Gbps",
+    "price": 119.99,
+    "description": "Maximum performance for homes with heavy simultaneous usage.",
+    "features": [
+      "Maximum speed",
+      "Premium router included",
+      "VIP 24/7 support"
+    ],
+    "image": "./images/plans/plan-ultra.jpg"
+  }
+]

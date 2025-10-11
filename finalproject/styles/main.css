@@ -1,0 +1,130 @@
+:root {
+  --color-primary: #003366;
+  --color-accent: #00bfff;
+  --color-bg: #f9fafb;
+  --color-text: #222;
+  --font-primary: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+/*--------------------------HEADER-----------------------------*/
+header {
+  background-color: var(--color-primary);
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.site-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: var(--color-accent);
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+  fill: #fff;
+}
+
+.hamburger svg rect {
+  transition: fill 0.3s;
+}
+
+.hamburger:hover svg rect {
+  fill: var(--color-accent);
+}
+
+/*-------------------------------FOOTER-------------------------------*/
+
+footer {
+  background-color: var(--color-primary);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/*------------------------------RESPONSIVE---------------------------------*/
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 1.5rem;
+    transform: translateY(-50%);
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--color-primary);
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .main-nav.active {
+    display: flex;
+  }
+}

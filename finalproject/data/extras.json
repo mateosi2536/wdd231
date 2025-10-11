@@ -1,0 +1,67 @@
+[
+  {
+    "id": 11,
+    "name": "Extra Router",
+    "speed": "-",
+    "price": 49.99,
+    "description": "Add an additional router for extended coverage in your home or office.",
+    "features": [
+      "Dual-band WiFi",
+      "Easy setup",
+      "Compatible with all plans"
+    ],
+    "image": "./images/extras/extra-router.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Firewall Security",
+    "speed": "-",
+    "price": 29.99,
+    "description": "Protect your network with a professional firewall solution.",
+    "features": [
+      "Advanced network protection",
+      "Prevent unauthorized access",
+      "Easy configuration"
+    ],
+    "image": "./images/extras/extra-firewall.jpg"
+  },
+  {
+    "id": 13,
+    "name": "WiFi Extender",
+    "speed": "-",
+    "price": 39.99,
+    "description": "Extend your WiFi coverage to every corner of your home or office.",
+    "features": [
+      "Plug-and-play setup",
+      "Seamless roaming",
+      "Boost signal strength"
+    ],
+    "image": "./images/extras/extra-wifi-extender.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Static IP Add-on",
+    "speed": "-",
+    "price": 9.99,
+    "description": "Get a dedicated IP address for your home or business network.",
+    "features": [
+      "Remote access made easy",
+      "Stable connection",
+      "Compatible with VPN"
+    ],
+    "image": "./images/extras/extra-static-ip.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Premium Support",
+    "speed": "-",
+    "price": 19.99,
+    "description": "Priority technical support to solve issues faster.",
+    "features": [
+      "24/7 phone & chat support",
+      "Faster response times",
+      "Expert technicians"
+    ],
+    "image": "./images/extras/extra-support.jpg"
+  }
+]

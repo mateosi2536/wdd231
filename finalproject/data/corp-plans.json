@@ -1,0 +1,67 @@
+[
+  {
+    "id": 6,
+    "name": "Business Basic",
+    "speed": "100 Mbps",
+    "price": 49.99,
+    "description": "Entry-level plan for small offices and light workloads.",
+    "features": [
+      "Reliable connection",
+      "24/7 business support",
+      "Static IP included"
+    ],
+    "image": "./images/corp-plans/business-basic.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Business Standard",
+    "speed": "200 Mbps",
+    "price": 79.99,
+    "description": "For offices with multiple users and moderate traffic.",
+    "features": [
+      "High-speed connectivity",
+      "WiFi included",
+      "Priority support"
+    ],
+    "image": "./images/corp-plans/business-standard.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Business Advanced",
+    "speed": "500 Mbps",
+    "price": 129.99,
+    "description": "Ideal for growing businesses with high data usage.",
+    "features": [
+      "Fast and stable connection",
+      "Advanced router included",
+      "Enhanced security"
+    ],
+    "image": "./images/corp-plans/business-advanced.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Business Premium",
+    "speed": "1 Gbps",
+    "price": 199.99,
+    "description": "For large offices with multiple devices and intensive use.",
+    "features": [
+      "Ultra-fast connection",
+      "Dedicated support line",
+      "VPN & firewall included"
+    ],
+    "image": "./images/corp-plans/business-premium.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Business Enterprise",
+    "speed": "2 Gbps",
+    "price": 349.99,
+    "description": "Maximum performance for enterprises with high demands.",
+    "features": [
+      "Gigabit speed",
+      "Custom network solutions",
+      "Priority VIP support"
+    ],
+    "image": "./images/corp-plans/business-enterprise.jpg"
+  }
+]

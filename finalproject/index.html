@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PlenoNet Site Plan - ISP website project plan.">
+    <meta name="author" content="Mateo Zambrano Delgado">
+    <title>PlenoNet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/index.css">
+
+    <script src="scripts/burguer-bt.js" defer></script>
+    <script src="scripts/plans.js" defer></script>
+    <script src="scripts/select-section-plan.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/internet-svgrepo-com.svg" alt="website logo" class="logo" />
+            <span class="site-name">PlenoNet</span>
+        </div>
+        <nav class="main-nav" id="mainNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger" aria-label="Menú" id="hamburgerBtn">
+            <svg width="24" height="24" viewBox="0 0 24 24">
+                <rect y="4" width="24" height="3" />
+                <rect y="10" width="24" height="3" />
+                <rect y="16" width="24" height="3" />
+            </svg>
+        </button>
+    </header>
+
+    <main>
+        <nav class="hero">
+            <div class="hero-content">
+                <h1>Welcome to PlenoNet</h1>
+                <p>
+                    PlenoNet is your trusted Internet service provider, offering fast, reliable, and secure connectivity
+                    for
+                    homes and businesses.
+                    Explore our 15 carefully designed plans and services below, divided into three categories:
+                    <strong>Residential Plans</strong>, <strong>Business Plans</strong>, and <strong>Additional Services
+                        &
+                        Equipment</strong>.
+                    Each card provides detailed information on speed, pricing, features, and more to help you choose the
+                    perfect
+                    solution for your needs.
+                </p>
+            </div>
+        </nav>
+
+        <div class="plans-tabs">
+            <button data-target="residential">Residential Plans</button>
+            <button data-target="business">Business Plans</button>  
+            <button data-target="extras">Additional Services</button>
+        </div>
+
+        <section id="plans">
+            <h2>Our Residential Internet Plans</h2>
+            <div id="residential-plans" class="plans-container"></div>
+        </section>
+
+        <section id="corp-plans">
+            <h2>Our Business Internet Plans</h2>
+            <div id="corporate-plans" class="plans-container"></div>
+        </section>
+
+        <section id="extras">
+            <h2>Additional Services & Equipment</h2>
+            <div id="extra-services" class="plans-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PlenoNet. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

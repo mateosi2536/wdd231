@@ -1,0 +1,33 @@
+:root {
+  --color-primary: #003366;
+  --color-accent: #00bfff;
+  --color-bg: #f9fafb;
+  --color-text: #222;
+  --font-primary: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-action {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: var(--color-bg);
+  border-radius: 8px;
+  font-family: var(--font-primary);
+  color: var(--color-text);
+}
+
+.form-action h2 {
+  text-align: center;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.form-action p {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.form-action span {
+  font-weight: bold;
+  color: var(--color-primary);
+}

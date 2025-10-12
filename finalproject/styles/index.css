@@ -130,8 +130,8 @@ section h2 {
 }
 
 .plan-card img {
-  width: 100px;
-  height: 100px;
+  width:120px;
+  height: auto;
   object-fit: cover;
   margin-bottom: 1rem;
 }

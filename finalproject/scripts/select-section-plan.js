@@ -5,12 +5,24 @@ const sections = {
     extras: document.getElementById('extras')
 };
 
-sections.residential.classList.add('active');
+// Función para mostrar la sección correcta
+function showSection(target) {
+    Object.values(sections).forEach(sec => sec.classList.remove('active'));
+    sections[target].classList.add('active');
+}
 
+// Al cargar la página, mostrar la última sección seleccionada o la residencial por defecto
+const lastTab = localStorage.getItem('lastPlanTab') || 'residential';
+showSection(lastTab);
+
+// Agregar evento a los botones
 tabs.forEach(tab => {
     tab.addEventListener('click', () => {
-        Object.values(sections).forEach(sec => sec.classList.remove('active'));
         const target = tab.dataset.target;
-        sections[target].classList.add('active');
+        showSection(target);
+
+        // Guardar en localStorage
+        localStorage.setItem('lastPlanTab', target);
     });
 });
+

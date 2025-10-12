@@ -8,7 +8,7 @@ export async function loadPlans(containerId, jsonFile) {
             const card = document.createElement('div');
             card.classList.add('plan-card');
             card.innerHTML = `
-                <img src="${plan.image}" alt="${plan.name} plan image">
+                <img src="${plan.image}" alt="${plan.name} plan image" loading="lazy">
                 <h2>${plan.name}</h2>
                 <p><strong>Speed:</strong> ${plan.speed}</p>
                 <p><strong>Price:</strong> $${plan.price}</p>

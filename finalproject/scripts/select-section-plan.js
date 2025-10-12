@@ -5,24 +5,29 @@ const sections = {
     extras: document.getElementById('extras')
 };
 
-// Función para mostrar la sección correcta
-function showSection(target) {
+export function showSection(target) {
     Object.values(sections).forEach(sec => sec.classList.remove('active'));
-    sections[target].classList.add('active');
+    if (sections[target]) {
+        sections[target].classList.add('active');
+    }
+    tabs.forEach(tab => {
+        if (tab.dataset.target === target) {
+            tab.classList.add('active');
+        } else {
+            tab.classList.remove('active');
+        }
+    });
 }
 
-// Al cargar la página, mostrar la última sección seleccionada o la residencial por defecto
-const lastTab = localStorage.getItem('lastPlanTab') || 'residential';
-showSection(lastTab);
+document.addEventListener('DOMContentLoaded', () => {
+    const lastTab = localStorage.getItem('lastPlanTab') || 'residential';
+    showSection(lastTab);
 
-// Agregar evento a los botones
-tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-        const target = tab.dataset.target;
-        showSection(target);
-
-        // Guardar en localStorage
-        localStorage.setItem('lastPlanTab', target);
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const target = tab.dataset.target;
+            showSection(target);
+            localStorage.setItem('lastPlanTab', target);
+        });
     });
 });
-

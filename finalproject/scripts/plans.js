@@ -1,4 +1,4 @@
-async function loadPlans(containerId, jsonFile) {
+export async function loadPlans(containerId, jsonFile) {
     const container = document.getElementById(containerId);
     try {
         const response = await fetch(jsonFile);
@@ -21,7 +21,3 @@ async function loadPlans(containerId, jsonFile) {
         console.error(`Error loading ${jsonFile}:`, error);
     }
 }
-
-loadPlans('residential-plans', './data/plans.json');
-loadPlans('corporate-plans', './data/corp-plans.json');
-loadPlans('extra-services', './data/extras.json');

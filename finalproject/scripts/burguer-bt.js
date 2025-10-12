@@ -1,6 +1,10 @@
-const hamburgerBtn = document.getElementById('hamburgerBtn');
-const mainNav = document.getElementById('mainNav');
+export function initHamburgerMenu() {
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mainNav = document.getElementById('mainNav');
 
-hamburgerBtn.addEventListener('click', () => {
-    mainNav.classList.toggle('active');
-});
+    if (!hamburgerBtn || !mainNav) return;
+
+    hamburgerBtn.addEventListener('click', () => {
+        mainNav.classList.toggle('active');
+    });
+}

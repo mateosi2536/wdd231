@@ -29,6 +29,7 @@ header {
   align-items: center;
   padding: 1rem 2rem;
   position: relative;
+  z-index: 10;
 }
 
 .logo-container {
@@ -48,9 +49,13 @@ header {
   letter-spacing: 1px;
 }
 
+.main-nav {
+  width: 80%;
+}
 .main-nav ul {
   list-style: none;
   display: flex;
+  justify-content: space-around;
   gap: 1.5rem;
 }
 

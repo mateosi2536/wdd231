@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="styles/contact.css">
 
     <script src="scripts/burguer-bt.js" defer></script>
+    <script src="scripts/modal-form.js" defer></script>
 </head>
 
 <body>
@@ -76,6 +77,17 @@
 
             <button type="submit">Send Message</button>
         </form>
+
+        <div id="confirm-modal" class="modal">
+            <div class="modal-content">
+                <h2>Confirm Your Submission</h2>
+                <p id="modal-preview"></p>
+                <div class="modal-buttons">
+                    <button id="confirm-submit">Confirm</button>
+                    <button id="cancel-submit">Cancel</button>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>

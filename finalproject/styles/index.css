@@ -9,9 +9,9 @@
 main {
   margin: 10px;
   text-align: center;
+  font-family: var(--font-primary);
+  color: var(--color-text);
 }
-
-/*-----------------hero------------------*/
 
 .hero {
   position: relative;
@@ -56,14 +56,12 @@ main {
 
 main h1,
 main p {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-primary);
   color: var(--color-primary);
   margin-bottom: 0.5rem;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 20px;
 }
-
-/*-----------------------plans-------------------------*/
 
 section {
   margin-bottom: 20px;
@@ -71,7 +69,7 @@ section {
 }
 
 section h2 {
-  margin: 0px;
+  margin: 0;
 }
 
 .plans-tabs {
@@ -83,13 +81,14 @@ section h2 {
 
 .plans-tabs button {
   background-color: var(--color-primary);
-  color: #fff;
+  color: var(--color-bg);
   border: none;
   padding: 0.6rem 1.2rem;
   font-size: 1rem;
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
+  font-family: var(--font-primary);
 }
 
 .plans-tabs button:hover {
@@ -118,19 +117,20 @@ section h2 {
 .plans-container {
   display: grid;
   margin-top: 10px;
-  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
   padding: 0 2rem;
 }
 
 .plan-card {
-  background-color: #fff;
+  background-color: var(--color-bg);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
+  font-family: var(--font-primary);
+  color: var(--color-text);
 }
 
 .plan-card:hover {
@@ -139,7 +139,7 @@ section h2 {
 }
 
 .plan-card img {
-  width:120px;
+  width: 120px;
   height: auto;
   object-fit: cover;
   margin-bottom: 1rem;
@@ -147,13 +147,14 @@ section h2 {
 
 .plan-card h2 {
   font-size: 1.5rem;
-  color: #003366;
+  color: var(--color-primary);
   margin-bottom: 0.5rem;
+  font-family: var(--font-primary);
 }
 
 .plan-card p {
   font-size: 1rem;
-  color: #444;
+  color: var(--color-text);
   margin-bottom: 0.5rem;
 }
 
@@ -165,5 +166,5 @@ section h2 {
 
 .plan-card ul li {
   margin: 0.3rem 0;
-  color: #222;
+  color: var(--color-text);
 }

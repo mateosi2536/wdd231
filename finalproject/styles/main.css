@@ -19,10 +19,9 @@ body {
   line-height: 1.6;
 }
 
-/*--------------------------HEADER-----------------------------*/
 header {
   background-color: var(--color-primary);
-  color: #fff;
+  color: var(--color-bg);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -52,6 +51,7 @@ header {
 .main-nav {
   width: 80%;
 }
+
 .main-nav ul {
   list-style: none;
   display: flex;
@@ -60,7 +60,7 @@ header {
 }
 
 .main-nav a {
-  color: #fff;
+  color: var(--color-bg);
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
@@ -75,7 +75,7 @@ header {
   border: none;
   cursor: pointer;
   display: none;
-  fill: #fff;
+  fill: var(--color-bg);
 }
 
 .hamburger svg rect {
@@ -86,17 +86,13 @@ header {
   fill: var(--color-accent);
 }
 
-/*-------------------------------FOOTER-------------------------------*/
-
 footer {
   background-color: var(--color-primary);
-  color: #fff;
+  color: var(--color-bg);
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
 }
-
-/*------------------------------RESPONSIVE---------------------------------*/
 
 @media (max-width: 768px) {
   header {

@@ -94,6 +94,18 @@ footer {
   font-size: 0.9rem;
 }
 
+footer a {
+  color: var(--color-bg);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
   header {
     flex-direction: row;
